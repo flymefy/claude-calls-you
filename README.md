@@ -12,8 +12,6 @@
 
 <div align="center">
 
-<video src="docs/demo.mp4" poster="docs/demo-thumb.jpg" controls muted playsinline width="360"></video>
-
 <a href="docs/demo.mp4"><img src="docs/demo-thumb.jpg" width="360" alt="Play demo / شغّل الفيديو"></a><br>
 ▶ <a href="https://github.com/flymefy/claude-calls-you/blob/main/docs/demo.mp4">Play / شغّل الفيديو</a> · <a href="https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/claude-calls-you-demo.mp4">Full quality / الجودة الكاملة</a>
 
