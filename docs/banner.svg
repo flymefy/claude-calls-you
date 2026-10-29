@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#241b63"/><stop offset="1" stop-color="#0b0a20"/></linearGradient>
+<radialGradient id="glow" cx="0.85" cy="0.2" r="0.6"><stop offset="0" stop-color="#7c6cff" stop-opacity=".55"/><stop offset="1" stop-color="#7c6cff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1280" height="380" rx="28" fill="url(#bg)"/><rect width="1280" height="380" rx="28" fill="url(#glow)"/>
+<g opacity=".18" fill="#fff"><circle cx="60" cy="60" r="2"/><circle cx="120" cy="60" r="2"/><circle cx="180" cy="60" r="2"/><circle cx="240" cy="60" r="2"/><circle cx="60" cy="120" r="2"/><circle cx="120" cy="120" r="2"/><circle cx="180" cy="120" r="2"/><circle cx="240" cy="120" r="2"/></g>
+<g transform="translate(1000,60)">
+<rect x="0" y="0" width="150" height="260" rx="30" fill="#14122e" stroke="#9aa0ad" stroke-width="5"/>
+<rect x="55" y="12" width="40" height="12" rx="6" fill="#000"/>
+<circle cx="75" cy="105" r="36" fill="#6d5dfc"/><path d="M63 98h24M63 108h24M63 118h14" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+<text x="75" y="170" text-anchor="middle" font-family="Cairo,Segoe UI,Arial" font-weight="800" font-size="17" fill="#fff">Claude Code</text>
+<text x="75" y="194" text-anchor="middle" font-family="Cairo,Segoe UI,Arial" font-size="13" fill="#b9b4ff">calling...</text>
+<circle cx="45" cy="228" r="16" fill="#e11d48"/><circle cx="105" cy="228" r="16" fill="#16a34a"/>
+</g>
+<g font-family="Cairo,Segoe UI,Arial,sans-serif">
+<text x="90" y="150" font-size="68" font-weight="900" fill="#fff">claude-calls-you</text>
+<text x="90" y="205" font-size="30" font-weight="700" fill="#cfcaff">وكيلك البرمجي يتصل بك على جوالك</text>
+<text x="90" y="250" font-size="22" fill="#9d98d6">Claude Code phones you for approvals, results and new commands</text>
+<g font-size="18" font-weight="800"><rect x="90" y="285" width="130" height="40" rx="20" fill="#6d5dfc"/><text x="155" y="311" text-anchor="middle" fill="#fff">MCP tool</text>
+<rect x="234" y="285" width="130" height="40" rx="20" fill="#0ea5e9"/><text x="299" y="311" text-anchor="middle" fill="#fff">Twilio</text>
+<rect x="378" y="285" width="170" height="40" rx="20" fill="#d946ef"/><text x="463" y="311" text-anchor="middle" fill="#fff">ElevenLabs</text></g>
+</g></svg>

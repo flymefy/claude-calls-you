@@ -1,0 +1,6 @@
+piper-tts
+flask
+twilio
+mcp
+python-dotenv
+requests
