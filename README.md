@@ -56,6 +56,10 @@ python voice_bridge/selftest.py check
 - Runs on your laptop or a server, no domain or static IP needed (cloudflared quick tunnel).
 - Secrets stay in a local `.env`.
 
+## Demo video
+
+[Watch / download the 100-second demo (Arabic, 1080x1920)](https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/claude-calls-you-demo.mp4)
+
 ## Works with any agent (Cursor, Codex, Antigravity, ...)
 
 The tool is a standard stdio **MCP server**, so any MCP client can use it. Claude Code gets one-command setup (`setup.py --install` also adds the hooks and the skill). For other agents, add the server and the rule by hand:
@@ -173,6 +177,10 @@ python voice_bridge/selftest.py check   # فحص بلا تكلفة
 
 - **Twilio المجاني**: يتصل برقمك الموثّق فقط، ويسمع رسالة تجريبية قبل الكلام. **المدفوع**: أي رقم وبدون رسالة، وتكلفة بسيطة جداً.
 - **ElevenLabs**: حسب حصتك وخطتك. الأسعار تتغير، راجع صفحات الأسعار قبل الدفع.
+
+## فيديو الشرح
+
+[شاهد أو حمّل فيديو الشرح (100 ثانية، بالعربية)](https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/claude-calls-you-demo.mp4)
 
 ## يعمل مع أي وكيل (Cursor وCodex وAntigravity وغيرها)
 
