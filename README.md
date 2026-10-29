@@ -60,6 +60,8 @@ python voice_bridge/selftest.py check
 
 [Watch / download the 100-second demo (Arabic, 1080x1920)](https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/claude-calls-you-demo.mp4)
 
+[Download the illustrated guide (PDF, 16 pages)](https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/voice-call-guide.pdf)
+
 ## Works with any agent (Cursor, Codex, Antigravity, ...)
 
 The tool is a standard stdio **MCP server**, so any MCP client can use it. Claude Code gets one-command setup (`setup.py --install` also adds the hooks and the skill). For other agents, add the server and the rule by hand:
@@ -181,6 +183,8 @@ python voice_bridge/selftest.py check   # فحص بلا تكلفة
 ## فيديو الشرح
 
 [شاهد أو حمّل فيديو الشرح (100 ثانية، بالعربية)](https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/claude-calls-you-demo.mp4)
+
+[حمّل الدليل المصوّر (PDF، 16 صفحة)](https://github.com/flymefy/claude-calls-you/releases/download/v1.0.0/voice-call-guide.pdf)
 
 ## يعمل مع أي وكيل (Cursor وCodex وAntigravity وغيرها)
 
