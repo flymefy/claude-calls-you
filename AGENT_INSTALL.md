@@ -1,6 +1,6 @@
 # Agent install instructions
 
-**Audience: the coding agent (Claude Code) that the user asked to install this project.** Reply to the user in the language they write in. Execute the steps in order and report each result briefly. The illustrated guide for the human is `docs/voice-call-guide.pdf` (pages 10 to 16 mirror this file and add the ElevenLabs agent spec and the skill text).
+**Audience: the coding agent (Claude Code, Cursor, Codex, Antigravity or any MCP client) that the user asked to install this project.** Reply to the user in the language they write in. Execute the steps in order and report each result briefly. The illustrated guide for the human is `docs/voice-call-guide.pdf` (pages 10 to 16 mirror this file and add the ElevenLabs agent spec and the skill text).
 
 ## 0. What you are installing
 
@@ -50,6 +50,7 @@ If an ElevenLabs MCP server is connected, create the agent with it; otherwise ca
 
 - `python voice_bridge/setup.py --install` registers the MCP server `voice-call` (user scope), adds Stop and Notification hooks to `~/.claude/settings.json`, appends the rule to `~/.claude/CLAUDE.md`, and copies the skill to `~/.claude/skills/phone-call-user/SKILL.md`.
 - If `claude` is not on PATH (Windows PowerShell): `python voice_bridge/register_mcp.py`.
+- **Not Claude Code?** (Cursor, Codex, Antigravity, any MCP client): skip `setup.py --install`. Register the stdio server by hand (`python /full/path/to/voice_bridge/server.py`, entry name `voice-call`) in that client's MCP config, and put the text of `voice_bridge/skill/phone-call-user/SKILL.md` into its rules file (`AGENTS.md`, `.cursor/rules/`, or equivalent). Hooks are Claude Code only.
 - Check that `~/.claude/skills/phone-call-user/SKILL.md` exists and matches `voice_bridge/skill/phone-call-user/SKILL.md`. Apply the user's chosen "when to call" rule to it. `~/.claude` is per machine, so repeat on every machine or server.
 
 ## 8. Verify at zero cost

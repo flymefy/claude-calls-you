@@ -10,7 +10,7 @@
 
 # claude-calls-you 📞
 
-Let Claude Code work while you are away. When it needs you, it **phones you and talks**: to report what it finished, to get your approval before a risky step, or to take a new command from your voice.
+Let your AI coding agent work while you are away. When it needs you, it **phones you and talks**. Built for **Claude Code**, and it works with **any MCP-compatible agent**: Cursor, Codex, Antigravity and more: to report what it finished, to get your approval before a risky step, or to take a new command from your voice.
 
 ## Why
 
@@ -56,6 +56,20 @@ python voice_bridge/selftest.py check
 - Runs on your laptop or a server, no domain or static IP needed (cloudflared quick tunnel).
 - Secrets stay in a local `.env`.
 
+## Works with any agent (Cursor, Codex, Antigravity, ...)
+
+The tool is a standard stdio **MCP server**, so any MCP client can use it. Claude Code gets one-command setup (`setup.py --install` also adds the hooks and the skill). For other agents, add the server and the rule by hand:
+
+```json
+{ "mcpServers": { "voice-call": { "command": "python", "args": ["/full/path/to/voice_bridge/server.py"] } } }
+```
+
+- **Cursor**: put that entry in `~/.cursor/mcp.json`, and the text of `voice_bridge/skill/phone-call-user/SKILL.md` in a rule (`.cursor/rules/`) or `AGENTS.md`.
+- **Codex**: `codex mcp add voice-call -- python /full/path/to/voice_bridge/server.py`, and the skill text in `AGENTS.md`.
+- **Antigravity** and other MCP clients: add the same entry in the client's MCP settings, and the skill text in its rules or instructions file.
+
+The Stop/Notification hooks are Claude Code only. Other agents call `call_user` whenever their rules tell them to.
+
 ## Security
 
 Never share or commit `.env` (it is git-ignored), rotate keys after testing, and never paste keys in chat.
@@ -70,7 +84,7 @@ MIT.
 
 # الوكيل يتصل بك 📞
 
-تخلّي Claude Code يشتغل وتروح تسوي شغلك. وعندما يحتاجك، **يتصل فيك على جوالك ويكلمك صوتياً**: ليخبرك بما أنجز، أو ليأخذ موافقتك قبل خطوة حساسة، أو ليستقبل منك أمراً جديداً وينفذه.
+تخلّي وكيلك البرمجي يشتغل وتروح تسوي شغلك. وعندما يحتاجك، **يتصل فيك على جوالك ويكلمك صوتياً**: ليخبرك بما أنجز، أو ليأخذ موافقتك قبل خطوة حساسة، أو ليستقبل منك أمراً جديداً وينفذه.
 
 ## لماذا تحتاجه؟
 
@@ -159,6 +173,20 @@ python voice_bridge/selftest.py check   # فحص بلا تكلفة
 
 - **Twilio المجاني**: يتصل برقمك الموثّق فقط، ويسمع رسالة تجريبية قبل الكلام. **المدفوع**: أي رقم وبدون رسالة، وتكلفة بسيطة جداً.
 - **ElevenLabs**: حسب حصتك وخطتك. الأسعار تتغير، راجع صفحات الأسعار قبل الدفع.
+
+## يعمل مع أي وكيل (Cursor وCodex وAntigravity وغيرها)
+
+الأداة **خادم MCP** قياسي، فيستخدمه أي وكيل يدعم MCP. مع Claude Code التثبيت بأمر واحد (`setup.py --install` يضيف أيضاً الهوكس والمهارة). مع بقية الوكلاء أضف الخادم والقاعدة يدوياً:
+
+```json
+{ "mcpServers": { "voice-call": { "command": "python", "args": ["/full/path/to/voice_bridge/server.py"] } } }
+```
+
+- **Cursor**: ضع هذا السطر في `~/.cursor/mcp.json`، ونص `voice_bridge/skill/phone-call-user/SKILL.md` في قاعدة (`.cursor/rules/`) أو ملف `AGENTS.md`.
+- **Codex**: `codex mcp add voice-call -- python /full/path/to/voice_bridge/server.py`، ونص المهارة في `AGENTS.md`.
+- **Antigravity** وأي عميل MCP آخر: أضف نفس السطر في إعدادات MCP، ونص المهارة في ملف القواعد أو التعليمات.
+
+هوكس Stop وNotification تعمل مع Claude Code فقط. بقية الوكلاء تستدعي `call_user` متى ما أمرتها قواعدها.
 
 ## الأمان
 

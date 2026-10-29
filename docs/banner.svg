@@ -15,8 +15,8 @@
 </g>
 <g font-family="Cairo,Segoe UI,Arial,sans-serif">
 <text x="90" y="150" font-size="68" font-weight="900" fill="#fff">claude-calls-you</text>
-<text x="90" y="205" font-size="30" font-weight="700" fill="#cfcaff">وكيلك البرمجي يتصل بك على جوالك</text>
-<text x="90" y="250" font-size="22" fill="#9d98d6">Claude Code phones you for approvals, results and new commands</text>
+<text x="90" y="205" font-size="30" font-weight="700" fill="#cfcaff">وكيلك البرمجي يتصل بك: Claude وCursor وCodex</text>
+<text x="90" y="250" font-size="22" fill="#9d98d6">Your AI agent phones you: Claude Code, Cursor, Codex, Antigravity</text>
 <g font-size="18" font-weight="800"><rect x="90" y="285" width="130" height="40" rx="20" fill="#6d5dfc"/><text x="155" y="311" text-anchor="middle" fill="#fff">MCP tool</text>
 <rect x="234" y="285" width="130" height="40" rx="20" fill="#0ea5e9"/><text x="299" y="311" text-anchor="middle" fill="#fff">Twilio</text>
 <rect x="378" y="285" width="170" height="40" rx="20" fill="#d946ef"/><text x="463" y="311" text-anchor="middle" fill="#fff">ElevenLabs</text></g>
